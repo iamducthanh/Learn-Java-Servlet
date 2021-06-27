@@ -1,0 +1,200 @@
+30-Dec-2020 15:47:12.772 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.41
+30-Dec-2020 15:47:12.775 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 3 2020 11:43:00 UTC
+30-Dec-2020 15:47:12.775 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.41.0
+30-Dec-2020 15:47:12.775 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+30-Dec-2020 15:47:12.775 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+30-Dec-2020 15:47:12.775 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+30-Dec-2020 15:47:12.775 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_111\jre
+30-Dec-2020 15:47:12.775 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_111-b14
+30-Dec-2020 15:47:12.775 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+30-Dec-2020 15:47:12.776 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41
+30-Dec-2020 15:47:12.776 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41
+30-Dec-2020 15:47:12.778 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41\conf\logging.properties
+30-Dec-2020 15:47:12.778 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+30-Dec-2020 15:47:12.778 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+30-Dec-2020 15:47:12.778 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+30-Dec-2020 15:47:12.778 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -agentlib:jdwp=transport=dt_socket,address=localhost:8000,server=y,suspend=n
+30-Dec-2020 15:47:12.779 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+30-Dec-2020 15:47:12.779 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41
+30-Dec-2020 15:47:12.779 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41
+30-Dec-2020 15:47:12.779 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41\temp
+30-Dec-2020 15:47:12.789 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;"C:\Program Files\Java\jdk1.8.0_111\bin;";C:\Program Files\Git\cmd;C:\Program Files (x86)\Dev-Cpp\MinGW64\bin;;C:\Users\ADMIN\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\heroku\bin;.]
+30-Dec-2020 15:47:13.578 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-Dec-2020 15:47:13.909 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[HTTP/1.1-8080]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1042)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:558)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1057)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:724)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:746)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:302)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:472)
+	Caused by: java.net.BindException: Address already in use: bind
+		at sun.nio.ch.Net.bind0(Native Method)
+		at sun.nio.ch.Net.bind(Net.java:433)
+		at sun.nio.ch.Net.bind(Net.java:425)
+		at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+		at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:228)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:211)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1159)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1172)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:592)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:80)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1039)
+		... 13 more
+30-Dec-2020 15:47:13.911 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1466] milliseconds
+30-Dec-2020 15:47:13.953 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+30-Dec-2020 15:47:13.953 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.41]
+30-Dec-2020 15:47:13.965 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41\webapps\docs]
+30-Dec-2020 15:47:14.505 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41\webapps\docs] has finished in [539] ms
+30-Dec-2020 15:47:14.505 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41\webapps\examples]
+30-Dec-2020 15:47:15.189 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41\webapps\examples] has finished in [684] ms
+30-Dec-2020 15:47:15.190 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41\webapps\host-manager]
+30-Dec-2020 15:47:15.236 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41\webapps\host-manager] has finished in [46] ms
+30-Dec-2020 15:47:15.236 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41\webapps\LapTrinhJavaWeb4_war]
+30-Dec-2020 15:47:15.626 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Dec-2020 15:47:15.701 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41\webapps\LapTrinhJavaWeb4_war] has finished in [465] ms
+30-Dec-2020 15:47:15.702 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41\webapps\LapTrinhJavaWeb_1_0_war]
+30-Dec-2020 15:47:16.035 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Dec-2020 15:47:16.063 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41\webapps\LapTrinhJavaWeb_1_0_war] has finished in [361] ms
+30-Dec-2020 15:47:16.063 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41\webapps\LapTrinhJavaWeb_war]
+30-Dec-2020 15:47:16.610 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Dec-2020 15:47:16.642 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41\webapps\LapTrinhJavaWeb_war] has finished in [578] ms
+30-Dec-2020 15:47:16.642 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41\webapps\manager]
+30-Dec-2020 15:47:16.679 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41\webapps\manager] has finished in [37] ms
+30-Dec-2020 15:47:16.679 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41\webapps\ROOT]
+30-Dec-2020 15:47:16.712 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41\webapps\ROOT] has finished in [33] ms
+30-Dec-2020 15:47:16.712 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41\webapps\untitled_war]
+30-Dec-2020 15:47:16.748 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal One or more Filters failed to start. Full details will be found in the appropriate container log file
+30-Dec-2020 15:47:16.748 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal Context [/untitled_war] startup failed due to previous errors
+30-Dec-2020 15:47:16.760 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41\webapps\untitled_war] has finished in [47] ms
+30-Dec-2020 15:47:16.766 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2854] milliseconds
+30-Dec-2020 15:47:16.769 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use: JVM_Bind
+		at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+		at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106)
+		at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+		at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+		at java.net.ServerSocket.bind(ServerSocket.java:375)
+		at java.net.ServerSocket.<init>(ServerSocket.java:237)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:584)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:864)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:810)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:342)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+30-Dec-2020 15:47:16.769 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+30-Dec-2020 15:47:16.769 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+30-Dec-2020 15:47:16.800 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+30-Dec-2020 15:47:16.803 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+30-Dec-2020 15:47:26.796 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.41
+30-Dec-2020 15:47:26.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 3 2020 11:43:00 UTC
+30-Dec-2020 15:47:26.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.41.0
+30-Dec-2020 15:47:26.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+30-Dec-2020 15:47:26.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+30-Dec-2020 15:47:26.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+30-Dec-2020 15:47:26.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_111\jre
+30-Dec-2020 15:47:26.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_111-b14
+30-Dec-2020 15:47:26.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+30-Dec-2020 15:47:26.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41
+30-Dec-2020 15:47:26.799 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41
+30-Dec-2020 15:47:26.802 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41\conf\logging.properties
+30-Dec-2020 15:47:26.802 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+30-Dec-2020 15:47:26.803 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+30-Dec-2020 15:47:26.803 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+30-Dec-2020 15:47:26.803 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -agentlib:jdwp=transport=dt_socket,address=localhost:8000,server=y,suspend=n
+30-Dec-2020 15:47:26.803 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+30-Dec-2020 15:47:26.803 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41
+30-Dec-2020 15:47:26.803 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41
+30-Dec-2020 15:47:26.803 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41\temp
+30-Dec-2020 15:47:26.809 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;"C:\Program Files\Java\jdk1.8.0_111\bin;";C:\Program Files\Git\cmd;C:\Program Files (x86)\Dev-Cpp\MinGW64\bin;;C:\Users\ADMIN\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\heroku\bin;.]
+30-Dec-2020 15:47:27.447 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-Dec-2020 15:47:27.753 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[HTTP/1.1-8080]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1042)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:558)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1057)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:724)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:746)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:302)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:472)
+	Caused by: java.net.BindException: Address already in use: bind
+		at sun.nio.ch.Net.bind0(Native Method)
+		at sun.nio.ch.Net.bind(Net.java:433)
+		at sun.nio.ch.Net.bind(Net.java:425)
+		at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+		at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:228)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:211)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1159)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1172)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:592)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:80)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1039)
+		... 13 more
+30-Dec-2020 15:47:27.754 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1394] milliseconds
+30-Dec-2020 15:47:27.787 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+30-Dec-2020 15:47:27.788 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.41]
+30-Dec-2020 15:47:27.801 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41\webapps\docs]
+30-Dec-2020 15:47:28.334 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41\webapps\docs] has finished in [534] ms
+30-Dec-2020 15:47:28.335 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41\webapps\examples]
+30-Dec-2020 15:47:29.034 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41\webapps\examples] has finished in [699] ms
+30-Dec-2020 15:47:29.034 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41\webapps\host-manager]
+30-Dec-2020 15:47:29.089 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41\webapps\host-manager] has finished in [55] ms
+30-Dec-2020 15:47:29.090 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41\webapps\LapTrinhJavaWeb4_war]
+30-Dec-2020 15:47:29.388 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Dec-2020 15:47:29.419 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41\webapps\LapTrinhJavaWeb4_war] has finished in [329] ms
+30-Dec-2020 15:47:29.420 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41\webapps\LapTrinhJavaWeb_1_0_war]
+30-Dec-2020 15:47:29.793 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Dec-2020 15:47:29.827 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41\webapps\LapTrinhJavaWeb_1_0_war] has finished in [408] ms
+30-Dec-2020 15:47:29.828 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41\webapps\LapTrinhJavaWeb_war]
+30-Dec-2020 15:47:30.462 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Dec-2020 15:47:30.503 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41\webapps\LapTrinhJavaWeb_war] has finished in [675] ms
+30-Dec-2020 15:47:30.504 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41\webapps\manager]
+30-Dec-2020 15:47:30.545 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41\webapps\manager] has finished in [40] ms
+30-Dec-2020 15:47:30.545 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41\webapps\ROOT]
+30-Dec-2020 15:47:30.575 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41\webapps\ROOT] has finished in [30] ms
+30-Dec-2020 15:47:30.576 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41\webapps\untitled_war]
+30-Dec-2020 15:47:30.607 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal One or more Filters failed to start. Full details will be found in the appropriate container log file
+30-Dec-2020 15:47:30.607 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal Context [/untitled_war] startup failed due to previous errors
+30-Dec-2020 15:47:30.614 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ADMIN\Desktop\apache-tomcat-9.0.41\webapps\untitled_war] has finished in [38] ms
+30-Dec-2020 15:47:30.620 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2865] milliseconds
+30-Dec-2020 15:47:30.622 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use: JVM_Bind
+		at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+		at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106)
+		at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+		at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+		at java.net.ServerSocket.bind(ServerSocket.java:375)
+		at java.net.ServerSocket.<init>(ServerSocket.java:237)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:584)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:864)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:810)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:342)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+30-Dec-2020 15:47:30.622 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+30-Dec-2020 15:47:30.622 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+30-Dec-2020 15:47:30.654 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+30-Dec-2020 15:47:30.655 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
