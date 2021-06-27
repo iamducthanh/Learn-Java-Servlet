@@ -6,7 +6,6 @@ import com.servlet.mapper.RowMapper;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 import java.util.ResourceBundle;
 
 public class AbstractDao<T> implements GenericDao<T> {

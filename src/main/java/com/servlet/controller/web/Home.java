@@ -14,17 +14,26 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.ResourceBundle;
 
 @WebServlet(urlPatterns = {"/trang-chu", "/dang-nhap"})
 public class Home extends HttpServlet {
     @Inject
     private UserService userService;
 
+    ResourceBundle rb = ResourceBundle.getBundle("messenge");
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String view = "";
         String action = req.getParameter("action");
         if (action != null && action.equals("login")) {
+            req.setAttribute("display","none");
+            String alert = req.getParameter("alert");
+            if(alert != null && alert.equals("error")){
+                req.setAttribute("display","unset");
+                req.setAttribute("messenge",rb.getString("loginFalse"));
+            }
             view = "/views/login.jsp";
         } else if (action != null && action.equals("logout")) {
             SessionUtil.getSessionUtil().removeUser(req, "USERMODEL");
@@ -54,7 +63,7 @@ public class Home extends HttpServlet {
                     resp.sendRedirect(req.getContextPath() + "/trang-chu");
                 }
             } else {
-                resp.sendRedirect(req.getContextPath() + "/dang-nhap?action=login");
+                resp.sendRedirect(req.getContextPath() + "/dang-nhap?action=login&alert=error");
             }
         }
     }

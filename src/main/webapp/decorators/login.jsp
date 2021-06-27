@@ -14,5 +14,6 @@
 </head>
 <body id="loginBack">
 <dec:body/>
+    <script src="<c:url value="/template/login/sweetalert2.all.min.js" />"></script>
 </body>
 </html>
