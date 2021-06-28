@@ -15,9 +15,9 @@
 <main>
     <div class="container-fluid">
         <h1 class="mt-4" name="thanh">Dashboard</h1>
-        <a class="breadcrumb mb-4" href="<c:url value="/admin/new?sort=asc"/> ">
+        <div class="breadcrumb mb-4">
             <li class="breadcrumb-item active">Dashboard</li>
-        </a>
+        </div>
 
         <div class="card mb-4">
             <div class="card-header">
@@ -86,31 +86,52 @@
                         </div>
                     </div>
                 </div>
+                <c:url var="urlAdd" value="/admin/new">
+                    <c:param name="type" value="add"/>
+                </c:url>
+                <a class="btn btn-primary" style="margin-left: 85%; margin-bottom: 5px" href=${urlAdd}>Thêm sản phẩm</a>
                 <div class="table-responsive">
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
                         <tr>
+                            <th>ID</th>
                             <th>Tiêu đề</th>
                             <th>Mô tả ngắn</th>
                             <th>Hình ảnh nhỏ</th>
+                            <th></th>
                         </tr>
                         </thead>
                         <tfoot>
                         <tr>
                         <tr>
+                            <th>ID</th>
                             <th>Tiêu đề</th>
                             <th>Mô tả ngắn</th>
                             <th>Hình ảnh nhỏ</th>
+                            <th></th>
                         </tr>
                         </tr>
                         </tfoot>
                         <tbody>
                         <c:forEach var="newItem" items="${model}">
                             <tr>
+                                <td>${newItem.id}</td>
                                 <td>${newItem.title}</td>
                                 <td>${newItem.shortDescription}</td>
                                 <td style="width: 100px;"><img src="${newItem.thumbnail}"
                                                                style="width: 50px; height: 50px"/></td>
+                                <c:url var="urlEdit" value="/admin/new">
+                                    <c:param name="type" value="edit" />
+                                    <c:param name="id" value="${newItem.id}" />
+                                </c:url>
+                                <c:url var="urlRemove" value="/admin/new">
+                                    <c:param name="type" value="remove" />
+                                    <c:param name="id" value="${newItem.id}" />
+                                </c:url>
+                                <td style="width: 140px">
+                                    <a class="btn btn-primary" href="${urlEdit}">Sửa</a>
+                                    <a class="btn btn-danger" href="${urlRemove}">Xóa</a>
+                                </td>
                             </tr>
                         </c:forEach>
                         </tbody>

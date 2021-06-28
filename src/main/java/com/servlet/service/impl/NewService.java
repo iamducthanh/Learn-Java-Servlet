@@ -19,4 +19,9 @@ public class NewService implements INewService {
         return new NewDao().fillAllAndSortAsc();
     }
 
+    @Override
+    public NewModel findOneById(String id) {
+        return new NewDao().fillOneById(id);
+    }
+
 }

@@ -42,11 +42,11 @@
                                     <div class="form-group">
                                         <input type="text" class="form-control form-control-user"
                                                id="exampleInputEmail" aria-describedby="emailHelp"
-                                               placeholder="Enter Email Address..." name="username">
+                                               placeholder="Enter Email Address..." name="username" value=${username}>
                                     </div>
                                     <div class="form-group">
                                         <input type="password" class="form-control form-control-user"
-                                               id="exampleInputPassword" placeholder="Password" name="password">
+                                               id="exampleInputPassword" placeholder="Password" name="password" value=${password}>
                                     </div>
                                     <div class="form-group">
                                         <div class="custom-control custom-checkbox small">

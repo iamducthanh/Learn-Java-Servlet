@@ -1,4 +1,6 @@
 <!-- Navigation -->
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
         <a class="navbar-brand" href="#">Start Bootstrap</a>
@@ -20,6 +22,26 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i>
+                        <c:if test="${empty USERMODEL}">Tài khoản</c:if>
+                        <c:if test="${not empty USERMODEL}">${USERMODEL.username}</c:if>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                        <a class="dropdown-item" href="#">Settings</a>
+                        <a class="dropdown-item" href="#">Activity Log</a>
+                        <div class="dropdown-divider"></div>
+                        <c:if test="${empty USERMODEL}" >
+                            <a class="dropdown-item" href="<c:url value="/dang-nhap?action=login"/> ">Đăng nhập</a>
+                        </c:if>
+                        <c:if test="${not empty USERMODEL && USERMODEL.vaiTro == 'ADMIN'}" >
+                            <a class="dropdown-item" href="<c:url value="/admin/trang-chu"/> ">Admin</a>
+                        </c:if>
+                        <c:if test="${not empty USERMODEL}" >
+                            <a class="dropdown-item" href="<c:url value="/dang-nhap?action=logout"/> ">Đăng xuất</a>
+                        </c:if>
+                    </div>
                 </li>
             </ul>
         </div>

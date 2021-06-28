@@ -7,4 +7,5 @@ import java.util.List;
 public interface INewDao extends GenericDao<NewModel> {
     List<NewModel> fillAll();
     List<NewModel> fillAllAndSortAsc();
+    NewModel fillOneById(String id);
 }

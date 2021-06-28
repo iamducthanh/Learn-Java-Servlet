@@ -13,6 +13,15 @@
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 
+<!--    <filter>-->
+<!--        <filter-name>authorization</filter-name>-->
+<!--        <filter-class>com.servlet.filter.AuthorizationFilter</filter-class>-->
+<!--    </filter>-->
+<!--    <filter-mapping>-->
+<!--        <filter-name>authorization</filter-name>-->
+<!--        <url-pattern>/*</url-pattern>-->
+<!--    </filter-mapping>-->
+
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>

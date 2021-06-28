@@ -7,4 +7,5 @@ import java.util.List;
 public interface INewService {
     List<NewModel> findAll();
     List<NewModel> fillAllAndSortAsc();
+    NewModel findOneById(String id);
 }

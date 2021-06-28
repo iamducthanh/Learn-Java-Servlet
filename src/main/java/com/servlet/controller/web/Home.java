@@ -30,9 +30,16 @@ public class Home extends HttpServlet {
         if (action != null && action.equals("login")) {
             req.setAttribute("display","none");
             String alert = req.getParameter("alert");
+            String message = req.getParameter("message");
             if(alert != null && alert.equals("error")){
+                String username = req.getParameter("username");
+                String password = req.getParameter("password");
+                if(username != null && password != null){
+                    req.setAttribute("username",username);
+                    req.setAttribute("password",password);
+                }
                 req.setAttribute("display","unset");
-                req.setAttribute("messenge",rb.getString("loginFalse"));
+                req.setAttribute("messenge",rb.getString(message));
             }
             view = "/views/login.jsp";
         } else if (action != null && action.equals("logout")) {
@@ -63,7 +70,7 @@ public class Home extends HttpServlet {
                     resp.sendRedirect(req.getContextPath() + "/trang-chu");
                 }
             } else {
-                resp.sendRedirect(req.getContextPath() + "/dang-nhap?action=login&alert=error");
+                resp.sendRedirect(req.getContextPath() + "/dang-nhap?action=login&alert=error&message=loginFalse&username="+username+"&password="+password);
             }
         }
     }

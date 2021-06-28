@@ -21,4 +21,11 @@ public class NewDao extends AbstractDao<NewModel> implements INewDao {
         String sql = "SELECT * FROM news order by id asc";
         return query(sql, new NewMapper());
     }
+
+    @Override
+    public NewModel fillOneById(String id) {
+        String sql = "select * from news where id = ?";
+        List<NewModel> list = query(sql, new NewMapper(), id);
+        return list.isEmpty() ? null : list.get(0);
+    }
 }
